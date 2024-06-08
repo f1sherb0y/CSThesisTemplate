@@ -1,0 +1,66 @@
+
+\ProposalSecNumbering
+\ProposalTocStyle
+\ProposalCounterStyle
+
+\invisiblelocaltableofcontents\label{localtoc}
+\etocsettocdepth{subsection}
+
+% \etocsetnexttocdepth{part}
+% \sectiontoconlynopage{文献综述和开题报告封面}
+% \etocsetnexttocdepth{subsection}
+
+\input{lib/pre/cover.tex}
+\cleardoublepage
+\thispagestyle{empty}
+
+\ifprint
+    \cleardoublepage
+    \input{lib/pre/requirements.tex}
+    \cleardoublepage
+\fi
+
+\etocarticlestyle
+
+\pagenumbering{Roman}
+\thispagestyle{bodypage}
+% \sectiontoconlynopage{目录}
+\localtableofcontents\ref{localtoc}
+
+\etocsettocdepth{section}
+\thispagestyle{bodypage}
+\pagestyle{bodypage}
+
+\cleardoublepage
+\pagestyle{bodypage}
+\fangsong \xiaosi \spacing{1.5}
+\numberwithin{table}{subsection}
+\numberwithin{figure}{subsection}
+
+\mainmatter
+\clearpage
+\begin{bibunit}
+    \input{src/pre/summary.tex}
+    \putbib
+\end{bibunit}
+
+\clearpage
+\begin{bibunit}
+    \input{src/pre/report.tex}
+    \putbib
+\end{bibunit}
+
+
+\clearpage
+\input{src/pre/translate.tex}
+
+
+\clearpage
+\input{src/pre/original.tex}
+
+\ifprint
+    \cleardoublepage
+    \sectiontoconly{《浙江大学本科生文献综述和开题报告考核表》}
+
+    \input{lib/pre/eval.tex}
+\fi

@@ -1,0 +1,71 @@
+\input{lib/final/cover.tex}
+
+\cleardoublepage
+
+\pagestyle{bodypage}
+\pagenumbering{Roman}
+\ifprint
+    \input{lib/final/promise.tex}
+    \thispagestyle{bodypage}
+\fi
+
+\cleardoublepage
+
+
+\input{src/final/ack.tex}
+\thispagestyle{bodypage}
+
+\cleardoublepage
+
+\input{src/final/abstract_zh.tex}
+\thispagestyle{bodypage}
+
+\cleardoublepage
+
+\input{src/final/abstract_en.tex}
+\thispagestyle{bodypage}
+
+\cleardoublepage
+
+\etocarticlestyle
+\FinalTocStyle
+\FinalSecNumbering
+\FinalCounterStyle
+
+\spacing{1.5}
+\thispagestyle{bodypage}
+
+\tableofcontents
+\thispagestyle{bodypage}
+
+
+
+\chapter{毕业论文（设计）}
+
+\cleardoublepage
+
+\pagenumbering{arabic}
+
+\spacing{1.5}
+\begin{bibunit}
+    \input{src/final/body.tex}
+\end{bibunit}
+
+\ifprint
+    \cleardoublepage
+    \input{lib/final/job.tex}
+    \cleardoublepage
+    \input{lib/final/eval.tex}
+\fi
+
+
+\ifprint\ifblind \relax \else
+    \cleardoublepage
+    \input{src/final/blind.tex}
+\fi \fi
+
+
+
+\ProposalSecNumbering
+\ProposalTocStyle
+

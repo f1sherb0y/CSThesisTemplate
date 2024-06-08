@@ -1,0 +1,86 @@
+# latexmk files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+*.toc
+
+# latexmk build directory
+**/build/
+test*
+
+# pdflatex files
+*.4ct
+*.4tc
+*.idv
+*.lg
+*.tmp
+*.xref
+
+# xelatex files
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.lzo
+*.lzs
+
+# index
+*.idx
+*.ilg
+*.ind
+*.maf
+*.mlf
+*.mlt
+*.mtc
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# bibtex
+*.bbl
+*.blg
+
+# hyperref
+*.brf
+
+# nomencl
+*.nlo
+
+# sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# glossaries
+*.glstex
+
+# xindy
+*.xdy
+
+out
+# algorithms
+*.alg
+*.loa
+
+# theorems
+*.thm
+*.agx
+
+*.zip
+*.pdf
+
+!figure/**.pdf

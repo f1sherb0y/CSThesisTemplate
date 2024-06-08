@@ -1,0 +1,33 @@
+{    \newlength{\pretitwidth}
+    \bfseries
+    \heiti
+    \xiaoyi
+    \vspace*{10pt}
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{figure/zjuchar.pdf} \\
+        \vspace{1em}
+        \settowidth{\pretitwidth}{文献综述和开题报告}
+        \makebox[\pretitwidth][s]{本\hfill 科\hfill 生\hfill 毕\hfill 业\hfill 论\hfill 文}\\
+        \vspace{1em}
+        文献综述和开题报告
+        \vspace{1em}
+    \end{center}
+    
+    \begin{center}
+        \includegraphics[width=0.2\textwidth]{figure/zjulogo.pdf}
+    \end{center}
+    
+    \sanhao
+    % \setlength\extrarowheight{1em}
+    \fangsong
+    \begin{center}
+        \renewcommand{\arraystretch}{1.5}
+        \begin{tabular}{lcl}
+            学生姓名  & \  & \makebox[7cm]{\uline{\hfill \student \hfill}}    \\
+            学生学号  & \  & \makebox[7cm]{\uline{\hfill \studentid \hfill}}  \\
+            指导教师  & \  & \makebox[7cm]{\uline{\hfill \instructor \hfill}} \\
+            年级与专业 & \  & \makebox[7cm]{\uline{\hfill \major ~ \grade \ifblind\relax\else 级\fi \hfill}}      \\
+            所在学院  & \  & \makebox[7cm]{\uline{\hfill \college \hfill}}
+        \end{tabular}
+    \end{center}
+    \thispagestyle{empty}}

@@ -1,0 +1,66 @@
+{
+
+    \fangsong \wuhao \bfseries
+    \hfill 公开论文 $\square$ \quad 涉密论文 $\square$ \quad \quad \quad
+    \bfseries
+    \heiti
+    \xiaoyi
+    \vspace*{10pt}
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{figure/zjuchar.pdf} \\
+        \vspace{1em}
+        ~~~本~科~生~毕~业~论~文~~~
+        \vspace{1em}
+    \end{center}
+
+    \begin{center}
+        \includegraphics[width=0.2\textwidth]{figure/zjulogo.pdf}
+    \end{center}
+
+    \sanhao
+    \setlength\extrarowheight{1em}
+    \fangsong
+    \begin{center}
+        \linespread{1}\selectfont
+        \newlength{\titwidth}
+        \newlength{\tablewidth}
+        \newlength{\realtablewidth}
+        \settowidth{\titwidth}{
+            \begin{tabular}{lc}
+                题目 & \uline{\hfill \thtitle \hfill}
+            \end{tabular}
+        }
+        \settowidth{\tablewidth}{
+            \begin{tabular}{lcc}
+                姓名与学号 & \  & \uline{\hfill \student~~ \studentid \hfill} \\
+                指导教师  & \  & \uline{\hfill \instructor \hfill}           \\
+                年级与专业 & \  & \uline{\hfill \major~~\grade \ifblind\relax\else 级\fi \hfill}      \\
+                所在学院  & \  & \uline{\hfill \college \hfill}              \\
+            \end{tabular}
+        }
+
+        \setlength{\realtablewidth}{\titwidth}
+        \ifdim\tablewidth>\titwidth
+            \setlength{\realtablewidth}{\tablewidth}
+        \fi
+        \begin{tabularx}{\realtablewidth}{lX}
+            题目 & \uline{\hfill \thtitle \hfill}
+        \end{tabularx}
+
+        \vspace{1em}
+
+        \begin{tabularx}{\realtablewidth}{lcX}
+            姓名与学号 & \  & \uline{\hfill \student~~ \studentid \hfill} \\
+            指导教师  & \  & \uline{\hfill \instructor \hfill}           \\
+            年级与专业 & \  & \uline{\hfill \major~~\grade \ifblind\relax\else 级\fi \hfill}      \\
+            所在学院  & \  & \uline{\hfill \college \hfill}              \\
+        \end{tabularx}
+
+        \vspace{1em}
+
+        \begin{tabularx}{\realtablewidth}{lcX}
+            \makebox[\widthof{年级与专业}][l]{提交日期} &  & \uline{\hfill \submitdate \hfill}
+        \end{tabularx}
+    \end{center}
+    \thispagestyle{empty}
+}
